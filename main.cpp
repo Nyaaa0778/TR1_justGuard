@@ -176,7 +176,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
       // ジャストガード受付判定開始
       if (distance < player.radius + enemy.radius + 2.0f) {
-        // 一定距離まで近づいた時にフレームカウントを増やし始める
+        // 一定範囲内のときフレームカウントを増やす
         frameInRange++;
       } else {
         frameInRange = 0;
