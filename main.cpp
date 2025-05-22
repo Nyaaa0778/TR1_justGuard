@@ -151,14 +151,18 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
     ///
 
     // プレイヤー移動
-    if (keys[DIK_D])
+    if (keys[DIK_D]) {
       player.pos.x += player.velocity.x;
-    if (keys[DIK_A])
+    }
+    if (keys[DIK_A]) {
       player.pos.x -= player.velocity.x;
-    if (keys[DIK_S])
+    }
+    if (keys[DIK_S]) {
       player.pos.y += player.velocity.y;
-    if (keys[DIK_W])
+    }
+    if (keys[DIK_W]) {
       player.pos.y -= player.velocity.y;
+    }
 
     // 敵初期化
     if (keys[DIK_F] && !preKeys[DIK_F]) {
